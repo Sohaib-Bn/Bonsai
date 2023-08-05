@@ -1,0 +1,128 @@
+.header {
+  &__logo {
+    height: 3.7rem;
+    margin-right: auto;
+    @media only screen and (max-width: $bp-meduim) {
+      margin-right: 0;
+    }
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &__navbar {
+      display: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__item-box {
+    position: relative;
+    display: block;
+  }
+
+  &__dropdown {
+    display: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    font-size: 1.65rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: $color-text;
+    transition: all 0.2s;
+    padding: 1.5rem 0;
+  }
+
+  &__item-box:hover &__link {
+    color: $color-primary;
+  }
+
+  &__item-box:hover &__link &__icon {
+    transform: rotate(-180deg);
+  }
+
+  &__item-box--product:hover &__dropdown {
+    display: block;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: currentColor;
+    transition: transform 0.2s, background-color 0s;
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .header__login {
+    display: none;
+  }
+}
+
+/////////////////////////
+/// PRODUCT LIST
+
+.product-menu {
+  background-color: $color-white;
+  border-radius: 4px;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 1rem 4rem rgba($color-text, 0.15);
+  position: absolute;
+  width: 35rem;
+  right: -13rem;
+
+  span {
+    display: block;
+    margin: 0 4rem;
+    height: 0.3px;
+    background-color: rgba(2, 4, 69, 0.15);
+    transition: all 0.2s;
+  }
+
+  &__item {
+    padding: 4.5rem 4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+
+    &:hover {
+      background-color: rgba(2, 4, 69, 0.03);
+    }
+
+    &-heading {
+      color: #000;
+      font-size: 2.1rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    &-description {
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  &__item:hover + span {
+    opacity: 0;
+    display: none;
+  }
+}

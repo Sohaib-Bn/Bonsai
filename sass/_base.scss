@@ -1,0 +1,239 @@
+// COLORS
+
+$color-primary: #00b289;
+$color-primary-light: rgb(242, 255, 251);
+$color-primary-light-hover: rgb(209, 251, 239);
+
+$color-hover: #039c78;
+$color-text: #4c4d5f;
+$color-blue-light: #f2faff;
+
+$color-yellow: #f8db62;
+$color-white: #fff;
+
+$color-grey-light-1: rgba(255, 255, 255, 0);
+$color-grey-light-2: #eee;
+$color-grey-light-3: hsl(214, 37%, 96%);
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #333;
+
+// FONTS
+
+$font-primary: "Lato", sans-serif;
+$font-secondary: "Amerigo", sans-serif;
+
+// BREAK POINTS
+
+$bp-large: 68.75em;
+$bp-meduim: 58.75em;
+$bp-small: 41.25em;
+
+@font-face {
+  font-family: "Amerigo";
+  src: url(../fonts/Amergo.ttf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // what defines 1rem is 10px
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-text;
+  background-color: $color-grey-light-1;
+}
+
+.btn {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-family: $font-primary;
+  background-color: $color-primary;
+  color: $color-white;
+  font-weight: 700;
+  padding: 1.2rem 2.7rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}
+
+.btn-out-line {
+  background-color: transparent;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 0.5rem;
+}
+
+.u-center {
+  width: 100%;
+  max-width: 95rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-switch {
+  width: 5rem;
+  height: 3rem;
+  background-color: $color-primary;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: $color-white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    transition: all 0.2s;
+  }
+}
+
+/////////////////////
+/// FUNCTIONALITY {
+
+.switch::before {
+  left: 2.1rem;
+}
+
+//////////////////////
+/// NAVBAR FOR SMALL SCREEN
+
+.nav-small-screen {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: $color-white;
+  padding: 3rem;
+  transition: all 0.4s ease-out;
+}
+
+.hidden {
+  display: block;
+  right: -120vw;
+}
+
+.navbar {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  &__logo {
+    width: 4.5rem;
+    display: inline-block;
+  }
+
+  &__icon {
+    position: fixed;
+    top: 3.5rem;
+    right: 6rem;
+    z-index: 2000;
+    height: 3.4px;
+    width: 3.6rem;
+    background-color: $color-text;
+    display: none;
+    transition: all 0.1s;
+
+    @media only screen and (max-width: $bp-small) {
+      display: inline-block;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 3.4px;
+      width: 3.6rem;
+      background-color: currentColor;
+      transition: all 0.2s;
+    }
+
+    &::after {
+      top: 1rem;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: 3rem;
+  }
+
+  &__item {
+    width: 93%;
+    border-bottom: 0.3px solid rgba(2, 4, 69, 0.15);
+  }
+
+  &__link {
+    justify-content: space-between !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+.nav__login {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.nav__btn {
+  width: 100% !important;
+}
+
+.be-close-icon {
+  background: transparent;
+}
+
+.be-close-icon::after {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.be-close-icon::before {
+  top: 0;
+  transform: rotate(-135deg);
+}

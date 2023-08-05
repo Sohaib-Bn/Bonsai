@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  width: 100vw;
+  position: fixed;
+  padding: 1rem 6.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  @media only screen and (max-width: $bp-meduim) {
+    padding: 1rem 3.5rem;
+    gap: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem 3.5rem;
+    gap: 5rem;
+  }
+
+  background-color: $color-white;
+  z-index: 100;
+}
+
+.section-price {
+  background-color: $color-grey-light-1;
+  position: relative;
+  padding: 25rem 6.5rem;
+  padding-bottom: 3rem;
+  @media only screen and (max-width: $bp-meduim) {
+    padding: 20rem 3.5rem;
+    padding-bottom: 3rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 15rem 3.5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.section-features {
+  padding: 0 6.5rem;
+  @media only screen and (max-width: $bp-meduim) {
+    padding: 0 3.5rem;
+  }
+}
+
+.section-cta {
+  padding: 10rem 6.5rem;
+  @media only screen and (max-width: $bp-meduim) {
+    padding: 10rem 3.5rem;
+  }
+}
+
+.section-fac {
+  padding: 3rem 6.5rem;
+  padding-bottom: 10rem;
+  @media only screen and (max-width: $bp-meduim) {
+    padding: 3rem 3.5rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.footer {
+  padding: 10rem 6.5rem;
+  padding-bottom: 5rem;
+  background-color: $color-text;
+  display: grid;
+  row-gap: 8rem;
+  column-gap: 2rem;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  @media only screen and (max-width: $bp-small) {
+    padding: 10rem 3.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}

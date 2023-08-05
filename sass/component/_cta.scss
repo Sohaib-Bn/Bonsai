@@ -1,0 +1,65 @@
+.cta-box {
+  padding: 5rem;
+  background-color: $color-blue-light;
+  display: flex;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  &__heading {
+    width: 60%;
+    font-size: 4.5rem;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3rem;
+      width: 100%;
+    }
+
+    span {
+      color: $color-primary;
+    }
+  }
+
+  &__btn {
+    font-size: 1.4rem;
+    width: 25%;
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+    font-weight: 400 !important;
+    position: relative;
+    padding: 2.5rem 3.5rem;
+  }
+
+  &__for-free,
+  &__star {
+    transition: all 0.2s;
+  }
+
+  &__for-free {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+  }
+
+  &__star {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+  }
+
+  &__btn:hover &__star {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+
+  &__btn:hover &__for-free {
+    top: 35%;
+    opacity: 1;
+  }
+}

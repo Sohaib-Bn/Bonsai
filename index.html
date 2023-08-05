@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-32x32.png">
+  <!-- google-font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>Bonsai &mdash; Test</title>
+</head>
+
+<body>
+  <header class="header">
+
+
+    <nav class="nav-small-screen hidden">
+      <div class="navbar">
+        <div class="navbar__top">
+          <img src="./img/logophone.svg" alt="" class="navbar__logo">
+        </div>
+        <div class="navbar__content">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="header__link navbar__link">
+                Product
+                <svg class="header__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-chevron-small-down" />
+                </svg>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="header__link navbar__link">
+                Templates
+                <svg class="header__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-chevron-small-down" />
+                </svg>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="header__link navbar__link">
+                Pricing
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="header__link navbar__link">
+                Reviews
+              </a>
+            </li>
+          </ul>
+          <div class="header__login nav__login">
+            <button class="btn btn-out-line nav__btn">Log in</button>
+            <button class="btn nav__btn">Start free</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+    <img src="./img/logo.svg" alt="" class="header__logo">
+    <span class="navbar__icon"></span>
+    <nav class="header__navbar">
+      <ul class="header__list">
+        <li class="header__item ">
+
+          <div class="header__item-box header__item-box--product">
+            <a href="#" class="header__link ">
+              Product
+              <svg class="header__icon">
+                <use xlink:href="./img/symbol-defs.svg#icon-chevron-small-down" />
+              </svg>
+            </a>
+
+            <div class="header__dropdown">
+              <div class="product-menu">
+                <div class="product-menu__item">
+                  <h1 class="product-menu__item-heading">Bonsai Workflow</h1>
+                  <p class="product-menu__item-description">Look profesionnal, win more clients and manage your business from one place</p>
+                </div>
+                <span></span>
+                <div class="product-menu__item">
+                  <h1 class="product-menu__item-heading">Bonsai Tax</h1>
+                  <p class="product-menu__item-description">Track expenses, maximaze write-offs, and estmate taxes without the headache</p>
+                </div>
+                <span></span>
+
+                <div class="product-menu__item">
+                  <h1 class="product-menu__item-heading">Bonsai Cash</h1>
+                  <p class="product-menu__item-description">Bonsai's all-in-one finantial hub:No fees and lightning fast payout</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">
+            Templates
+            <svg class="header__icon">
+              <use xlink:href="./img/symbol-defs.svg#icon-chevron-small-down" />
+            </svg>
+          </a>
+        </li>
+        <li class="header__item">
+          <a href="" class="header__link">Pricing</a>
+        </li>
+        <li class="header__item">
+          <a href="" class="header__link">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__login">
+      <button class="btn btn-out-line">Log in</button>
+      <button class="btn">Start free</button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-price">
+      <div class="bg"></div>
+      <div class="price-text">
+        <h1 class="price-text__heading">Plans & Pricing</h1>
+        <div class="price-text__switch-box">
+          <span class="price-text__month price-text__focus">monthly</span>
+          <span class="btn-switch"></span>
+          <span class="price-text__year">yearly <img src="./img/two month.png" alt="" class="two-months"></span>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3 class="heading-3 card__heading u-margin-bottom-small">Starter</h3>
+          <p class="card__discreption">Ideal for freelancers and contractors just starting out.</p>
+
+          <div class="card__price-box">
+            <h2 class="card__price-text">
+              <span class="dallor">$</span>
+              <span class="price-number price-number--1">24</span>
+              <span class="month">/MONTH</span>
+              <span class="only-year">Billed Yearly</span>
+
+            </h2>
+
+          </div>
+
+          <div class="card__features">
+            <ul class="card__list">
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                All Templates
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Unlimited Clients & Projects
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Invoicing & Payments
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Proposals & Contracts
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Tasks & Time Tracking
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Client CRM
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Expense Tracking
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Up to 5 Project Collaborators
+              </li>
+            </ul>
+          </div>
+          <button class="btn card__cta">Start Free</button>
+        </div>
+
+        <div class="card">
+          <div class="card__popular">most popular</div>
+          <h3 class="heading-3 card__heading u-margin-bottom-small">Professional</h3>
+          <p class="card__discreption">Everything a growing independent business needs to thrive.</p>
+
+          <div class="card__price-box">
+            <h2 class="card__price-text">
+              <span class="dallor">$</span>
+              <span class="price-number price-number--2">39</span>
+              <span class="month">/MONTH</span>
+              <span class="only-year">Billed Yearly</span>
+            </h2>
+
+          </div>
+
+          <div class="card__features">
+            <ul class="card__list">
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Everything in Starter plus...
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Custom Branding
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Forms & Questionnaires
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Workflow Automations
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Client Portal
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                QuickBooks Integration
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Calendly Integration
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Zapier Integration
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Up to 15 Project Collaborators
+              </li>
+            </ul>
+          </div>
+          <button class="btn card__cta">Start Free</button>
+        </div>
+
+        <div class="card">
+          <h3 class="heading-3 card__heading u-margin-bottom-small">Business</h3>
+          <p class="card__discreption">The perfect package for small businesses and agencies.</p>
+
+          <div class="card__price-box">
+            <h2 class="card__price-text">
+              <span class="dallor">$</span>
+              <span class="price-number price-number--3">79</span>
+              <span class="month">/MONTH</span>
+              <span class="only-year">Billed Yearly</span>
+            </h2>
+
+          </div>
+
+          <div class="card__features">
+            <ul class="card__list">
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Everything in Starter and Professional plus...
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Subcontractor Management
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Hiring Agreement Templates (1099 contracts)
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Subcontractor Onboarding
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Talent Pool
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                3 Team Seats (additional seats $9/month)
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Accountant Access
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Connect Multiple Bank Accounts
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Unlimited Subcontractors
+              </li>
+              <li class="card__item">
+                <svg class="card__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-check" />
+                </svg>
+                Unlimited Project Collaborators
+              </li>
+            </ul>
+          </div>
+          <button class="btn card__cta">Start Free</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-features">
+      <h1 class="features__title">Super your charge work with add:ons</h1>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__decription">
+            <h3 class="feature__heading heading-3">Accounting & Tax Assistant</h3>
+            <p class="feature__text">Manage your freelance finances and always be ready for tax season with easy-to-use accounting and tax tools.</p>
+            <button class="feature__btn">Learn more <span>&RightArrow;</span></button>
+          </div>
+          <div class="feature__price">
+            <h3 class="heading-3">
+              <span class="feature__price-numb feature__price-numb--1">$10</span>
+              <span>/month</span>
+            </h3>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__decription">
+            <h3 class="feature__heading heading-3">Partners</h3>
+            <p class="feature__text">Invite other users for full account access and company management.</p>
+          </div>
+          <div class="feature__price">
+            <h3 class="heading-3">
+              <span class="feature__price-numb feature__price-numb--2">$9</span>
+              <span>/month</span>
+            </h3>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__decription">
+            <h3 class="feature__heading heading-3">Callobrators</h3>
+            <p class="feature__text">Invit other users to specific project for limited access and functionality</p>
+          </div>
+          <div class="feature__price">
+            <h3 class="heading-3 free">Free</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cta">
+      <div class="u-center">
+        <div class="cta-box">
+          <h1 class="cta-box__heading">It's <span>your</span> business. we're here to help it grow.</h1>
+
+          <button class="btn cta-box__btn">
+            <span class="cta-box__star">Star</span>
+            <span class="cta-box__for-free">For free</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-fac">
+      <div class="fac">
+        <h2 class="fac__heading">FAQs</h1>
+          <div class="fac__list">
+
+            <h3 class="fac__big-heading fac__big-heading--1">How it works?</h3>
+            <div class="fac__box fac__box--1" id="1">
+              <h3 class="fac__question">How does the free trial work?
+                <svg class="fac__icon fac__icon--1">
+                  <use xlink:href="./img/symbol-defs.svg#icon-chevron-down" />
+                </svg>
+              </h3>
+              <p class="fac__inswer fac__inswer--1">
+                when you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsail's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wih to cancel at any time during the trial period, you can dod so throught your Subscription Setting Page
+              </p>
+            </div>
+            <div class="fac__box fac__box--2" id="2">
+              <h3 class="fac__question">Can I change plans anytime?
+                <svg class="fac__icon fac__icon--2">
+                  <use xlink:href="./img/symbol-defs.svg#icon-chevron-down" />
+                </svg>
+              </h3>
+              <p class="fac__inswer fac__inswer--2">
+                Yes, you can from within your account. If you have already subscribed to a plan, or want to downgrade or upgrade your current one, you can do this by going to your "Settings" and "Subscription".
+              </p>
+            </div>
+            <div class="fac__box fac__box--3" id="3">
+              <h3 class="fac__question">How do I pause my Bonsai subscription?
+                <svg class="fac__icon fac__icon--3">
+                  <use xlink:href="./img/symbol-defs.svg#icon-chevron-down" />
+                </svg>
+              </h3>
+              <p class="fac__inswer fac__inswer--3">
+                We totally understand that with the nature of freelancing, work ebbs and flows so you might not always need your Bonsai subscription to remain active! The good news is that you can cancel or pause your monthly subscription at any time without penalty. Once cancelled, you'll be able to continue logging in to access all your documents and even continue to use our free features, like Time Tracking! In order to cancel your subscription, login to your Bonsai account.
+              </p>
+            </div>
+
+            <h3 class="fac__big-heading fac__big-heading--2">Policy?</h3>
+
+            <div class="fac__box fac__box--4" id="4">
+              <h3 class="fac__question">What is your refund policy?
+                <svg class="fac__icon fac__icon--4">
+                  <use xlink:href="./img/symbol-defs.svg#icon-chevron-down" />
+                </svg>
+              </h3>
+
+              <p class="fac__inswer fac__inswer--4">
+                If you contact us within 2 weeks of being charged for your subscription, we will be happy to issue a refund for you!Beyond those 2 weeks, you will need to cancel or modify the subscription from the Subscriptions Tab in Settings to avoid future charges, but refunds will not be issued. This applies to both monthly and annual plans.
+              </p>
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__nav">
+      <h3 class="footer__heading">product</h3>
+      <ul class="footer__menu">
+        <li class="footer__item"><a href="" class="footer__link">Proposals</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Contracts</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Invoicing</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Client CRM</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Time Tracking</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Task Tracking</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Froms</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Accounting</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Bonsai Tax</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Bonsai Cash </a></li>
+      </ul>
+    </div>
+    <div class="footer__nav">
+      <h3 class="footer__heading">resources</h3>
+      <ul class="footer__menu">
+        <li class="footer__item"><a href="" class="footer__link">Freelance Resources</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Freelance Blog by Bonsai</a></li>
+        <li class="footer__item"><a href="" class="footer__link">How to Write a Contract</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Online Signature Maker</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Self-Employed Taxes Hub</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Self-Employed Tax Calculator</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Self-Employed Tax Deductions </a></li>
+      </ul>
+    </div>
+    <div class="footer__nav">
+      <h3 class="footer__heading">templates</h3>
+      <ul class="footer__menu">
+        <li class="footer__item"><a href="" class="footer__link">Invoice Templates</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Proposal Templates </a></li>
+        <li class="footer__item"><a href="" class="footer__link">Contract Templates </a></li>
+        <li class="footer__item"><a href="" class="footer__link">Agreement Templates </a></li>
+        <li class="footer__item"><a href="" class="footer__link">Time Tracking</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Scope of Work Templates </a></li>
+        <li class="footer__item"><a href="" class="footer__link">Quote Templates </a></li>
+        <li class="footer__item"><a href="" class="footer__link">Credit Note Templates</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Estimate Templates</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Form Templates</a></li>
+      </ul>
+    </div>
+    <div class="footer__nav">
+      <h3 class="footer__heading">bonsai</h3>
+      <ul class="footer__menu">
+        <li class="footer__item"><a href="" class="footer__link">About</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Careers </a></li>
+        <li class="footer__item"><a href="" class="footer__link">Support </a></li>
+        <li class="footer__item"><a href="" class="footer__link">LinkedIn </a></li>
+        <li class="footer__item"><a href="" class="footer__link">Twitter</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Privacy policy </a></li>
+        <li class="footer__item"><a href="" class="footer__link">Legal </a></li>
+        <li class="footer__item"><a href="" class="footer__link">Affiliates</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Write for Us</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Comparisons</a></li>
+      </ul>
+    </div>
+
+    <p class="copyright">Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      Coded By <a href="" class="footer__item footer__link">Sohaib Benyamna</a>
+    </p>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
